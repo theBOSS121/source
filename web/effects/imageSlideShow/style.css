@@ -1,0 +1,68 @@
+body {
+	margin:0;
+	padding:0;
+	background:#313131;
+}
+
+.slider {
+	width:1200px;
+	height:600px;
+	background: url(img/chicago.jpg);
+	margin: 100px auto;
+	animation: slide 20s infinite;
+}
+
+@keyframes slide {
+	33% {
+		background: url(img/la.jpg);
+	}66% {
+		background: url(img/ny.jpg);
+	}100% {
+		background: url(img/chicago.jpg);
+	}	
+}
+
+/* index2 */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.carousel-container {
+	width: 400px;
+	margin:auto;
+	overflow: hidden;
+}
+
+.carousel-slide {
+	display: flex;
+	width: 400px;
+	height: 100vh;
+}
+
+.carousel-container .carousel-slide img {
+	width: 400px;
+	object-fit: cover;
+}
+
+#prevBtn {
+	position: absolute;
+	top: 40%;
+	left: 30px;
+}
+
+#nextBtn {
+	position: absolute;
+	top: 40%;
+	right: 30px;
+}
+
+button {
+	background: #313131;
+	border: none;
+	color: #fff;
+	font-size: 4rem;
+	outline: none;
+}

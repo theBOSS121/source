@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 60%;
+    float: right;
+}
+.container {
+    padding: 20px;
+}
+
+nav {
+    display: none;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    color: #999;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #f4f4f4;
+}
+
+.flex {
+    display: flex;
+    .left,
+    .right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+
+        img {
+            padding-bottom: 20px;
+            width: 100%;
+        }
+    }
+    .left {
+        padding-right: 10px;
+    }
+    .right {
+        padding-left: 10px;
+    }
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 300px 0;
+    text-align: center;
+
+    img {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 40%;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    p {
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        padding: 12px;
+        text-decoration: none;
+        color: #000;
+        background: #f4f4f4;
+        width: 200px;
+        margin: 0 auto;
+        transition: all 0.3s;
+
+        &:hover {
+            background: darken(#f4f4f4, 10);
+        }
+    }
+}
+
+#my-portfolio {
+    margin-bottom: 50px;
+}
+
+#about {
+    color: #999;
+    p {
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        margin: 25px 0;
+    }
+
+    .my-skills {
+        width: 100%;
+
+        .bar {
+            margin: 10px 0;
+            text-align: center;
+            width: 100%;
+            background: #f4f4f4;
+            color: #fff;
+
+            &-95 {
+                width: 95%;
+                background: #616161;
+            }
+            &-85 {
+                width: 85%;
+                background: #616161;
+            }
+            &-80 {
+                width: 80%;
+                background: #616161;
+            }
+        }
+        .box {
+            background: #616161;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+        }
+
+        a {
+            text-align: center;
+            display: block;
+            margin: 20px 0;
+            padding: 12px;
+            text-decoration: none;
+            color: #000;
+            background: #f4f4f4;
+            width: 200px;
+            transition: all 0.3s;
+
+            &:hover {
+                background: darken(#f4f4f4, 10);
+            }
+        }
+    }
+
+    .my-reputation {
+        .rounded-img {
+            width: 80px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            img {
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+        .info {
+            margin-top: 10px;
+            width: calc(100% - 100px);
+            font-size: 0.9rem;
+            float: right;
+            p {
+                margin-top: 15px;
+            }
+            .name,
+            .inline {
+                display: inline;
+            }
+            .name {
+                margin-right: 10px;
+                color: #000;
+            }
+            .inline {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .my-price {
+        width: 100%;
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .price-box {
+                width: 50%;
+                margin: 7px;
+                border: 1px solid #ccc;
+
+                p {
+                    height: 40px;
+                    line-height: 39px;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                .price-box-title {
+                    height: 100px;
+                    background: #000;
+                    color: #fff;
+                    p {
+                        line-height: 100px;
+                        height: 100%;
+                        border: none;
+                    }
+                }
+                &.price-box:first-child .price-box-title {
+                    background: #999;
+                }
+
+                .price-box-price {
+                    p {
+                        font-size: 0.8rem;
+                        font-weight: 100;
+                    }
+                    p.p {
+                        margin-top: 10px;
+                        font-size: 2rem;
+                        border: none;
+                    }
+                }
+
+                .price-box-footer {
+                    background-color: #f4f4f4;
+                    height: 70px;
+                    position: relative;
+                    a {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-decoration: none;
+                        color: #000;
+                        background: #fff;
+                        padding: 8px 12px;
+
+                        &:hover {
+                            color: #fff;
+                            background: #000;
+                        }
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 1px 1px 5px #999;
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    color: #999;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    form {
+        width: 100%;
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+
+            &[type="submit"] {
+                width: 160px;
+                border: none;
+                background: #f4f4f4;
+                color: #000;
+
+                &:hover {
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    p {
+        padding: 70px;
+    }
+}

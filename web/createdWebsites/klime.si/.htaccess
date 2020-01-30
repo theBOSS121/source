@@ -1,0 +1,21 @@
+#
+# LIMIT HTTP POST ACCESS
+#
+# Throw a 403/Forbidden for HTTP POST requests:
+# - made from outside allowed country zones or
+# - made from IP addresses not allowed.
+#
+<IfModule mod_geoip.c>
+    RewriteEngine on
+    GeoIPEnable on
+    RewriteCond %{REQUEST_METHOD} POST
+    # Allowed country zones (CC|CC|etc.)
+    RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(SI|HR|HU|AT|IT)$
+    # Allowed IP addresses (IP|IP|etc.)
+    RewriteCond %{REMOTE_ADDR} !(127.0.0.1)
+    RewriteRule .* - [F,L]
+</IfModule>
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.klime.si/$1 [R,L]

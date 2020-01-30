@@ -1,0 +1,694 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.underline {
+    border-bottom: 2px solid #49deb5;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 0;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.fixed .logo {
+    background: #311a55 url("img/dcc-logo-2019.svg");
+    padding: 0 10px;
+}
+
+.fixed ul li a{
+    color: #251441;
+}
+
+.fixed ul li .contact-btn{
+    color: #fff;
+}
+
+.btn {
+    background: #52ffce;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    margin: 50px auto;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    font-size:1.2rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #329c80;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+header .contact-line{
+    display: block;
+    width: 100%;
+    height: 30px;
+    background:rgb(0, 0, 0, 0.6);
+    line-height: 30px;
+    overflow: hidden;
+}
+
+header .contact-line p {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header nav {
+    padding: 15px 0;
+}
+
+header nav .logo {
+    width: 130px;
+    margin-left: 20px;
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    font-size: 0;
+    margin-right: 20px;
+    display: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #49deb5;
+}
+
+header nav ul li .contact-btn {
+    background: #49deb5;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+header nav ul li .contact-btn:hover {
+    border-bottom: none;
+    background: #329c80;
+}
+
+#home {
+    background: url('img/aquagreen.jpg');
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    color: #fff;
+}
+
+#home .home-wrap {
+    position: absolute;
+    bottom: 100px;
+    left: 10%;    
+    width: 380px;
+    display: none;
+}
+
+#home .home-wrap h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#home .home-wrap p {
+    line-height: 1.6rem;
+}
+
+#services {
+    /* box-shadow: 0 -10px 5px 2px rgba(3, 12, 12, 0.9); */
+    margin-top: 100vh;
+    background: #092c2c;
+    color:#fff;
+    padding-bottom: 100px;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+#services .service {
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+#services .service:hover {
+    background: #52ffce;
+}
+
+#service .service h3 {
+    font-size: 1.4rem;
+}
+
+
+#service .service p {
+    font-size: 1rem;
+}
+
+#mid-section {
+    height: 150px;
+    position: relative;
+}
+
+#mid-section a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #092c2c;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+#about-us {
+    background: url('img/about-us.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+#about-us .box{
+    background: #fff;
+    background-position: center;
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#about-us .box h2 {
+    font-size: 2.6rem;
+    margin: 20px 0;
+}
+
+#about-us .box h4 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #888;
+}
+
+#about-us .box p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 20px 0;
+    color: #888;
+}
+
+#about-us .box .btn {
+    width: 50%;
+}
+
+#contact {
+    padding: 0;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#contact p {
+    width: 100%;
+    padding: 60px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#251441;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+
+#contact a {
+    width: 100%;
+    padding: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    box-sizing: border-box;
+    background:#251441;
+    color: #fff;
+    margin-top: 100px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    background: #311a55;
+}
+
+#contact .contact-op {
+    width: 400px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#contact .contact-op a {
+    float:none;
+    clear: both;
+    width: 180px;
+    font-size: 0.9rem;
+    padding: 15px;
+    background: #49deb5;
+}
+
+#contact .contact-op a:hover {
+    background: #329c80;
+}
+
+#contact .contact-op p {
+    display: block;
+    width: 400px;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* services.html */
+
+#services-bg {
+    background: url('img/excavator.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    z-index: -1;
+}
+
+#services-bg::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1b;
+    opacity: 0.6;
+}
+
+#services-bg .services-bg-wrap {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 400px;
+    color: #fff;
+}
+
+#services-bg .services-bg-wrap h2{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+#services-bg .services-bg-wrap p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+#services-services {
+    width: 100%;
+    padding-top: 100px;
+}
+
+
+#services-services .servces-service {
+    width: 49%;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#services-services .servces-service .w {
+    background: url('img/excavator.jpg');
+    background-size: cover;
+    height: 200px;
+    padding: 20px;
+    color:#fff;
+    position: relative;
+    z-index: -2;
+    border-radius: 6px;
+}
+
+#services-services .servces-service .w::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #023326;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#services-services .servces-service:hover .w::before {
+    opacity: 1;
+    background: #251441;
+}
+
+#services-services .servces-service .w h3 {
+    font-size: 1.6rem;
+    margin: 0 0 20px 30px;
+}
+
+#services-services .servces-service .w p {
+    font-size: 0.9rem;
+}
+
+/* ************* */
+
+/* sectoren */
+
+#sectoren-services {
+    margin-top: 100px;
+}
+
+
+#sectoren-services .sectoren-service {
+    width: 49%;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#sectoren-services .sectoren-service .w {
+    background: url('img/excavator.jpg');
+    background-size: cover;
+    height: 200px;
+    padding: 20px;
+    color:#fff;
+    position: relative;
+    z-index: -2;
+    border-radius: 6px;
+}
+
+#sectoren-services .sectoren-service .w::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: #023326;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#sectoren-services .sectoren-service .w h3 {
+    position: absolute;
+    bottom: 30%;
+    left: 20px;
+    font-size: 1.6rem;
+}
+
+#sectoren-services .sectoren-service .w p {
+    position: absolute;
+    bottom: 10%;
+    left: 20px;
+    font-size: 0.9rem;
+}
+
+/* ******* */
+
+/* over-ons */
+
+#over-ons-text {
+    margin-top: 100px;
+    color:#311a55;
+    width: 70%;
+    margin-left: 100px;
+}
+
+#over-ons-text h3 {
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+}
+
+
+#over-ons-text p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ******** */
+
+/* contact */
+
+#contact-contact {
+    color: #311a55;
+    width: 80%;
+    margin: 80px auto;
+}
+
+#contact-contact h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+#contact-contact h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+#contact-contact p {
+    margin-bottom: 10px;
+    color: #999;
+}
+
+#contact-contact .fright h5 {
+    margin-top: 40px;
+}
+
+#contact-contact .fright h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#contact-contact .fright h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#contact-contact .fright p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+#contact-contact .fright h6 {
+    color: #999;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#contact-contact .clr {
+    clear: both;
+}
+
+/* ******* */
+
+footer {
+    clear: both;
+    border-top: 1px solid #251441;
+    padding: 80px 0 0;
+    height: 400px;
+    position: relative;
+}
+
+footer .column {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 60px;
+    box-sizing: border-box;
+}
+
+footer .column .logo {
+    width: 80%;
+    max-width: 150px;
+    margin: auto;
+}
+footer .column .certificat {
+    width: 45%;
+    max-width: 100px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+footer .column .certificat img{
+    width: 100%;
+    padding: 20px 20px 0 0;
+    box-sizing: border-box;
+}
+
+footer .column h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+footer .column p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+footer .column h4 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-line {
+    clear: both;
+    color: #999;
+    background: #311a55;
+    font-size: 0.9rem;
+    position: absolute;
+    width: 100%;
+    /* bottom: 0px; */
+}
+
+
+.clr {
+    clear: both;
+}
+
+@media (min-width:660px) {
+
+    #contact {
+        padding: 100px 100px 200px 40px;
+    }
+
+    #contact p {
+        width: 55%;
+        padding: 0;
+        float: left;
+    }
+
+    #contact a {
+        width: 40%;
+        float: right;        
+        margin-top: 20px;
+    }
+
+
+
+
+    header nav ul {
+        display: block;
+    }
+    
+    footer .column {    
+        width: 25%;
+        float: left;
+    }
+
+    .footer-line {
+        bottom: 0px;
+    }
+
+    footer .column h3 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width:1000px) {
+    #about-us {
+        height: 700px;
+    }
+
+    #about-us .box {
+        float: right;
+        width: 450px;
+        margin-top: 50px;
+    }
+
+    #services .service:nth-child(even) {
+        float: right;
+        width: 50%;
+        padding: 50px;
+        margin-bottom: 40px;
+    }
+    #services .service:nth-child(odd) {
+        float: left;
+        width: 50%;
+        padding: 50px;
+        margin-bottom: 40px;
+    }
+    
+    #contact-contact .fleft {
+        margin-top: 60px;
+        width: 50%;
+        float: left;
+    }
+
+    #contact-contact .fright {
+        margin-top: 60px;
+        width: 50%;
+        float: right;
+    }
+
+}
+
+@media (min-height: 650px) {
+    #home .home-wrap {
+        display: block;
+    }
+}

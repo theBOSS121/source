@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luka Uranic</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    <header>        
+        <div class="bar">
+            <a href="#home">
+                <div class="logo"></div>
+            </a>            
+            <div class="open-close-nav"></div>
+        </div>
+        <nav>
+            <div class="links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section id="home">    
+        <canvas></canvas>
+        <div class="container">
+            <div class="home-wrapper">
+                <h1>Hi,</h1>
+                <h1>I'm Luka</h1>
+                <h1>programmer</h1>
+            </div>
+            <a class="btn" href="#about-me">More about me</a>
+        </div>
+        <a class="go-down" href="#projects"><img src="img/arrow-down.png" alt="go down"></a>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Recent projects</h2>
+            <div class="project-type">
+                <h4>Websites:</h4>
+                <a href="http://www.klime.si" target="_blank">
+                    <div class="project klime-si">
+                        <h3>klime.si</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="project-type">
+                <h4>Mobile apps:</h4>
+                
+                <a href="https://play.google.com/store/apps/developer?id=Luka+Uranic" target="_blank">
+                    <div class="project ride">
+                        <h3>Ride</h3>
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/developer?id=Luka+Uranic" target="_blank">
+                    <div class="project avoid">
+                        <h3>Avoid</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-type">
+                <h4>Desktop apps:</h4>
+                <a href="https://gamejolt.com/@LukaUranic/games" target="_blank">
+                    <div class="project sacrifice">
+                        <h3>Sacrifice</h3>
+                    </div>
+                </a>                
+                <a href="https://gamejolt.com/@LukaUranic/games" target="_blank">
+                    <div class="project shooter">
+                        <h3>Shooter</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="clr"></div>
+            <a href="https://github.com/theBOSS121/programming" target="_blank">
+                <div class="icon">
+                    <h5>My github:</h5>
+                    <div>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <div class="clr"></div>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <ul>
+                <li class="service">
+                    <h3>UI/UX</h3>
+                    <p>UI/UX (user interface/user expirience). My goal is to make the user's interaction as simple and efficient as possible, in terms of accomplishing user goals.</p>
+                </li>
+                <li class="service">
+                    <h3>Website</h3>
+                    <p>My websites are fully responsive and are designed in a way to look great on a mobile phones. I am designing modern looking websites with clear and simple to use layout.</p>
+                </li>
+                <li class="service">
+                    <h3>Web app/game</h3>
+                    <p>You can also have a fully woking web app/game that will run in a browser. You can than have it hosted on your website or just keep it locally and run it on your computer.</p>
+                </li>
+                <li class="service">
+                    <h3>Android app/game</h3>
+                    <p>I can make you a mobile app/game that will run on an android mobile phone. You can than publish it on google play store. You can check out my android games <a href="https://play.google.com/store/apps/developer?id=Luka+Uranic" target="_blank">here</a></p>
+                </li>
+                <li class="service">
+                    <h3>Desktop app/game</h3>
+                    <p>I can make you a desktop app/game that communicates with a database.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <div class="container">
+
+            <h2>About me</h2>
+            <p>I'm Luka Uranic. I'm creative, young and always improving programmer. I specialize at website creation. My websites are fully responsible and looks great on smartphones. I can also create android, desktop or web application for you.</p>
+            
+            <p>Skills: HTML, CSS, JavaScript, PHP, MySQL, JSON, Java, xml...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            
+            <p>E-mail:</p>
+            <p>luka.uranic12@gmail.com</p>
+            
+            <div class="icons">
+                
+            </div>
+        </div>
+
+        <form id="send-message" action="mail.php" method="POST">
+            <p class="return"></p>         
+            <div class="container">       
+                <div class="input-wrap left">
+                    <input name="fullname" type="text" required>
+                    <span>Your Name & Surname</span>
+                </div>           
+                <div class="input-wrap right">
+                    <input name="email" type="text" required>
+                    <span>Your Email Address</span>
+                </div>            
+                <div class="input-wrap left">
+                    <input name="phone" type="text" required>
+                    <span>Your Phone</span>
+                </div>            
+                <div class="input-wrap right">
+                    <input name="subject" type="text" required>
+                    <span>Your Subject</span>
+                </div>
+                <div class="clr"></div>
+                <div class="input-wrap">
+                    <textarea name="message" required></textarea>
+                    <span>Your message</span>
+                </div>
+                <div class="capcha">
+                    <div class="g-recaptcha" data-sitekey="6LeaFaMUAAAAAJYy2GeNCzZgfkFd7IXhS3VNI2CY" data-callback="notSpam"></div>
+                </div>
+                <div class="input-wrap">
+                    <input type="submit" name="submit"  value="SEND MESSAGE">
+                </div>
+            </div>
+        </form>
+    </section>    
+
+    <script>
+        var form = document.getElementById('send-message');
+        // probalbly dont need spam and notSpam()
+        let spam = true;
+        form.addEventListener("submit", function(event){
+            if(spam || grecaptcha.getResponse() === '') {        
+                event.preventDefault();
+            }
+        }
+        , false);
+        function notSpam() {
+            spam = false;
+        }
+    </script>
+    
+	<script src="canvas.js"></script>
+    <script src="main.js"></script>
+    <script src="services.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

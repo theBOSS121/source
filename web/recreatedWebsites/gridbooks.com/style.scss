@@ -1,0 +1,117 @@
+nav {
+    background-color: #fff;
+
+    ul {
+        li {
+            padding: 12px 12px 12px 0;
+        }
+    }
+}
+
+.landing {
+    background-color: #7b7d81;
+    overflow-x: hidden;
+    .item {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .over {
+            top: 65%;
+            left: 0%;
+            transform: translate(0%, -50%);
+            width: 250px;
+            position: absolute;
+
+            h2 {
+                color: #fff;
+                font-size: 2.4rem;
+            }
+            p {
+                color: #fff;
+            }
+            a {
+                display: inline-block;
+                margin: 15px 0;
+                padding: 12px;
+                background-color: #000000;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.made {
+    .center {
+        text-align: center;
+        width: 690px;
+        margin: 50px auto;
+
+        h3 {
+            margin: 30px 0;
+        }
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+
+    .flex {
+        min-height: 300px;
+        .item {
+            position: relative;
+            p {
+                width: 250px;
+                height: 180px;
+                line-height: 180px;
+                text-align: center;
+                background-color: #f78066;
+            }
+            &:first-child {
+                p {
+                    background-color: #47a7b2;
+                }
+            }
+            &:last-child {
+                p {
+                    background-color: #7d7b83;
+                }
+            }
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .a {
+            height: 200px;
+            .i {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-left: none;
+                span {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            &:last-child .i {
+                border-right: none;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    margin: -50px 0 50px;
+
+    p {
+        font-size: 0.8rem;
+        color: #999;
+    }
+}

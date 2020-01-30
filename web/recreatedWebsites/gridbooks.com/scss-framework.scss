@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+        Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-ul {
+    list-style: none;
+
+    li {
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    // .flex .column
+    &.column {
+        flex-direction: column;
+    }
+    // .flex .wrap
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    // .j-c (c, e, sa, sb, se)
+    &.jc-c {
+        justify-content: center;
+    }
+    &.jc-e {
+        justify-content: flex-end;
+    }
+    &.jc-sa {
+        justify-content: space-around;
+    }
+    &.jc-sb {
+        justify-content: space-between;
+    }
+    &.jc-se {
+        justify-content: space-evenly;
+    }
+    &.ai-c {
+        align-items: center;
+    }
+    &.ai-e {
+        align-items: flex-end;
+    }
+    // it is strech by default
+    &.ai-s {
+        align-items: flex-start;
+    }
+    &.ac-c {
+        align-content: center;
+    }
+    &.ac-e {
+        align-content: flex-end;
+    }
+    &.ac-sa {
+        align-content: space-around;
+    }
+    &.ac-sb {
+        align-content: space-between;
+    }
+    &.ac-se {
+        align-content: space-evenly;
+    }
+
+    // .flex .gap-5
+    // Margin & Padding in px
+    $amounts: (5, 10, 15, 20, 25, 30, 35, 40);
+    @each $gap in $amounts {
+        &.gap-#{$gap} {
+            .item {
+                margin: #{$gap}px;
+            }
+        }
+    }
+    // .flex .c-3 || .flex .c-2 gap-5
+    @for $i from 1 through 6 {
+        $v: 1 / $i;
+        $w: percentage($v);
+        // for no gap
+        &.c-#{$i} {
+            flex-wrap: wrap;
+            .item {
+                width: #{$w};
+            }
+        }
+        // for all gaps
+        @each $gap in $amounts {
+            $a: #{$gap * 2}px;
+
+            &.c-#{$i}.gap-#{$gap} {
+                flex-wrap: wrap;
+                .item {
+                    width: calc(#{$w} - #{$a});
+                }
+            }
+        }
+    }
+
+    .item {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+// Margin & Padding in rems
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+    // All around margin
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    // Vertical Margin
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    // All around Padding
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    // Vertical Padding
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}

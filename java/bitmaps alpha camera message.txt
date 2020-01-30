@@ -1,0 +1,16 @@
+ldpi    | mdpi    | hdpi    | xhdpi     | xxhdpi    | xxxhdpi
+36 x 36 | 48 x 48 | 72 x 72 | 96 x 96   | 144 x 144 | 192 x 192
+
+//desplaying the message
+new AlertDialog.Builder(this).setMessage("message").setNeutralButton(android.R.string.ok, null).show();
+
+//alpha blending
+//pixelColor is color of the pixel before
+//value is color thet has alpha
+int newRed = ((pixelColor >> 16) & 0xff) - (int) ((((pixelColor >> 16) & 0xff) - ((value >> 16) & 0xff)) * (alpha / 255f));
+int newGreen = ((pixelColor >> 8) & 0xff) - (int) ((((pixelColor >> 8) & 0xff) - ((value >> 8) & 0xff)) * (alpha / 255f));
+int newBlue = (pixelColor & 0xff) - (int) (((pixelColor & 0xff) - (value & 0xff)) * (alpha / 255f));
+			
+//targetX and targetY are coordinates that the camera should follow, but it follows it slower and more fluid
+offX -= 0.1 * (offX - targetX);
+offY -= 0.1 * (offY - targetY);
